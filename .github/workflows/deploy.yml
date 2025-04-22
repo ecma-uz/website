@@ -28,7 +28,6 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@main
 
       - name: Build website
-        continue-on-error: true
         run: nix build
 
       - name: Setup Pages
