@@ -1,17 +1,20 @@
+"use client"
+
 import { Hero } from '@/components/Hero'
-import { Newsletter } from '@/components/Newsletter'
-import { Schedule } from '@/components/Schedule'
-import { Speakers } from '@/components/Speakers'
-import { Sponsors } from '@/components/Sponsors'
+import { Communities } from '@/components/Communities'
+import { Committee } from '@/components/Committee'
+import { useLanguage } from '@/context/LanguageContext'
+import { translations, LanguageCode } from '@/data/translations'
 
 export default function Home() {
-  return (
-    <>
-      <Hero />
-      <Speakers />
-      <Schedule />
-      <Sponsors />
-      <Newsletter />
-    </>
-  )
+    const { language } = useLanguage();
+    const t = translations[language as LanguageCode];
+
+    return (
+        <>
+            <Hero />
+            <Communities />
+            <Committee />
+        </>
+    )
 }
