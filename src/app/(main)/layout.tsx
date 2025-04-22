@@ -1,9 +1,16 @@
 import { Layout } from '@/components/Layout'
+import {LanguageProvider} from "@/context/LanguageContext";
 
 export default function MainLayout({
-  children,
+   children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode
 }) {
-  return <Layout>{children}</Layout>
+    return (
+        <LanguageProvider>
+            <Layout>
+                {children}
+            </Layout>
+        </LanguageProvider>
+    )
 }
