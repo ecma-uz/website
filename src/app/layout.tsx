@@ -1,8 +1,10 @@
 import { type Metadata } from 'next'
 import { DM_Sans, Inter } from 'next/font/google'
-import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
+
+import clsx from "clsx";
+import {LanguageProvider} from "@/context/LanguageContext";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -19,30 +21,28 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - DeceptiConf',
-    default: 'DeceptiConf - A community-driven design conference',
+    template: '%s - Ecma Uzbekistan',
+    default: 'Ecma Uzbekistan - JavaScript Communities in Uzbekistan',
   },
   description:
-    'At DeceptiConf you’ll learn about the latest dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected.',
+      'Ecma Uzbekistan represents and connects JavaScript communities across Uzbekistan, helping them collaborate, share knowledge, and grow together.',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={clsx(
-        'h-full bg-white antialiased',
-        inter.variable,
-        dmSans.variable,
-      )}
-    >
+      <html
+          lang="en"
+          className={clsx(
+              'h-full bg-white antialiased',
+              inter.variable,
+              dmSans.variable,
+          )}
+      >
       <body className="flex min-h-full">
-        <div className="flex w-full flex-col">{children}</div>
+        <LanguageProvider>
+            <div className="flex w-full flex-col">{children}</div>
+        </LanguageProvider>
       </body>
-    </html>
+      </html>
   )
 }
