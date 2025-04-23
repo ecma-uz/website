@@ -37,3 +37,113 @@
 
   --container-2xl: 40rem;
 }
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #00FF88;
+    --color-primary-dark: #00CC6A;
+    --color-primary-light: #33FF9E;
+    
+    /* Accent Colors */
+    --color-accent: #FF3366;
+    --color-accent-dark: #CC2952;
+    --color-accent-light: #FF5C85;
+    
+    /* Neutral Colors */
+    --color-neutral-50: #F8FAFC;
+    --color-neutral-100: #F1F5F9;
+    --color-neutral-200: #E2E8F0;
+    --color-neutral-300: #CBD5E1;
+    --color-neutral-400: #94A3B8;
+    --color-neutral-500: #64748B;
+    --color-neutral-600: #475569;
+    --color-neutral-700: #334155;
+    --color-neutral-800: #1E293B;
+    --color-neutral-900: #0F172A;
+    
+    /* Success Colors */
+    --color-success: #10B981;
+    --color-success-dark: #059669;
+    --color-success-light: #34D399;
+    
+    /* Warning Colors */
+    --color-warning: #F59E0B;
+    --color-warning-dark: #D97706;
+    --color-warning-light: #FBBF24;
+    
+    /* Error Colors */
+    --color-error: #EF4444;
+    --color-error-dark: #DC2626;
+    --color-error-light: #F87171;
+  }
+}
+
+@layer components {
+  /* Primary Color Classes */
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+  .hover\:bg-primary-dark:hover {
+    background-color: var(--color-primary-dark);
+  }
+  .hover\:text-primary-dark:hover {
+    color: var(--color-primary-dark);
+  }
+  
+  /* Accent Color Classes */
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+  .text-accent {
+    color: var(--color-accent);
+  }
+  .border-accent {
+    border-color: var(--color-accent);
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: var(--color-accent-dark);
+  }
+  .hover\:text-accent-dark:hover {
+    color: var(--color-accent-dark);
+  }
+  
+  /* Success Color Classes */
+  .bg-success {
+    background-color: var(--color-success);
+  }
+  .text-success {
+    color: var(--color-success);
+  }
+  .border-success {
+    border-color: var(--color-success);
+  }
+  
+  /* Warning Color Classes */
+  .bg-warning {
+    background-color: var(--color-warning);
+  }
+  .text-warning {
+    color: var(--color-warning);
+  }
+  .border-warning {
+    border-color: var(--color-warning);
+  }
+  
+  /* Error Color Classes */
+  .bg-error {
+    background-color: var(--color-error);
+  }
+  .text-error {
+    color: var(--color-error);
+  }
+  .border-error {
+    border-color: var(--color-error);
+  }
+}
