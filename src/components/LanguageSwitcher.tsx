@@ -1,11 +1,9 @@
 'use client'
 
 import { useLanguage } from '@/context/LanguageContext'
-import { translations, LanguageCode } from '@/data/translations'
 
 export function LanguageSwitcher() {
     const { language, setLanguage } = useLanguage();
-    const t = translations[language as LanguageCode].themeToggle;
 
     return (
         <div className="flex items-center gap-2">

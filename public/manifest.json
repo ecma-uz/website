@@ -1,0 +1,14 @@
+{
+  "name": "Ecma Uzbekistan",
+  "short_name": "Ecma UZ",
+  "description": "JavaScript Communities in Uzbekistan",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#00FF88",
+  "theme_color": "#000000",
+  "icons": [],
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "portrait-primary",
+  "categories": ["community", "education", "development", "programming"]
+} 

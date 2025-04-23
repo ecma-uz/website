@@ -1,36 +1,37 @@
 'use client'
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { LanguageCode } from '@/data/translations';
+import { translations, LanguageCode } from '@/data/translations';
 
-interface LanguageContextType {
+type LanguageContextType = {
     language: LanguageCode;
-    setLanguage: (language: LanguageCode) => void;
-}
+    setLanguage: (lang: LanguageCode) => void;
+};
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-    const [language, setLanguage] = useState<LanguageCode>('en');
+    const [language, setLanguage] = useState<LanguageCode>('uz');
 
     useEffect(() => {
+        // Проверяем сохраненный язык в localStorage
         const savedLanguage = localStorage.getItem('language') as LanguageCode | null;
-        if (savedLanguage) {
+        if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'ru' || savedLanguage === 'uz')) {
             setLanguage(savedLanguage);
+        } else {
+            // Если нет сохраненного языка, устанавливаем узбекский
+            setLanguage('uz');
+            localStorage.setItem('language', 'uz');
         }
     }, []);
 
-    useEffect(() => {
-        localStorage.setItem('language', language);
-    }, [language]);
-
-    const value = {
-        language,
-        setLanguage,
+    const handleSetLanguage = (lang: LanguageCode) => {
+        setLanguage(lang);
+        localStorage.setItem('language', lang);
     };
 
     return (
-        <LanguageContext.Provider value={value}>
+        <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage }}>
             {children}
         </LanguageContext.Provider>
     );

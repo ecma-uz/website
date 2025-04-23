@@ -1,0 +1,13 @@
+<svg viewBox="0 0 180 180" width="180px" height="180px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <title>Uzbek Ecma #2</title>
+
+  <g id="Uzbek-Ecma-#2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <rect fill="#00FF88" x="0" y="0" width="1000" height="1000"/>
+    <text id="UE" font-family="SFPro-Bold, SF Pro" font-weight="bold" fill="#000000" font-size="40">
+      <tspan y="170" x="120">UE</tspan>
+    </text>
+    <text id="2025" font-family="SFPro-Bold, SF Pro" font-weight="bold" fill="#000000" font-size="21">
+      <tspan x="120" y="135">2025</tspan>
+    </text>
+  </g>
+</svg>

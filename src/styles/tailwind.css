@@ -39,6 +39,15 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
   :root {
     /* Primary Colors */
     --color-primary: #00FF88;
@@ -61,6 +70,45 @@
     --color-neutral-700: #334155;
     --color-neutral-800: #1E293B;
     --color-neutral-900: #0F172A;
+    
+    /* Success Colors */
+    --color-success: #10B981;
+    --color-success-dark: #059669;
+    --color-success-light: #34D399;
+    
+    /* Warning Colors */
+    --color-warning: #F59E0B;
+    --color-warning-dark: #D97706;
+    --color-warning-light: #FBBF24;
+    
+    /* Error Colors */
+    --color-error: #EF4444;
+    --color-error-dark: #DC2626;
+    --color-error-light: #F87171;
+  }
+
+  .dark {
+    /* Primary Colors - keeping the same bright colors for visibility in dark mode */
+    --color-primary: #00FF88;
+    --color-primary-dark: #00CC6A;
+    --color-primary-light: #33FF9E;
+    
+    /* Accent Colors - keeping the same bright colors for visibility in dark mode */
+    --color-accent: #FF3366;
+    --color-accent-dark: #CC2952;
+    --color-accent-light: #FF5C85;
+    
+    /* Inverted Neutral Colors for dark mode */
+    --color-neutral-50: #0F172A;
+    --color-neutral-100: #1E293B;
+    --color-neutral-200: #334155;
+    --color-neutral-300: #475569;
+    --color-neutral-400: #64748B;
+    --color-neutral-500: #94A3B8;
+    --color-neutral-600: #CBD5E1;
+    --color-neutral-700: #E2E8F0;
+    --color-neutral-800: #F1F5F9;
+    --color-neutral-900: #F8FAFC;
     
     /* Success Colors */
     --color-success: #10B981;
@@ -146,4 +194,18 @@
   .border-error {
     border-color: var(--color-error);
   }
+  
+  /* Theme transition classes */
+  .theme-transition {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+}
+
+/* Transition for all color-related elements */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }

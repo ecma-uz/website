@@ -18,7 +18,7 @@ export default function Home() {
             <Communities />
             <Committee />
             <About />
-            <Events />
+            {/* <Events /> */}
         </>
     )
 }
