@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 0 255 136;
+    --color-primary-dark: 0 204 106;
+    --color-accent: 255 51 102;
+    --color-accent-dark: 204 41 82;
+    
+    /* Text colors */
+    --color-text-primary: 15 23 42;
+    --color-text-secondary: 71 85 105;
+    --color-background: 255 255 255;
+    --color-background-secondary: 241 245 249;
+  }
+  
+  .dark {
+    --color-primary: 0 255 136;
+    --color-primary-dark: 0 204 106;
+    --color-accent: 255 51 102;
+    --color-accent-dark: 204 41 82;
+    
+    /* Dark mode text colors */
+    --color-text-primary: 248 250 252;
+    --color-text-secondary: 203 213 225;
+    --color-background: 15 23 42;
+    --color-background-secondary: 30 41 59;
+  }
+}
+
+@layer components {
+  .nestjs-icon {
+    @apply transition-transform duration-300;
+  }
+  
+  .nestjs-icon:hover {
+    @apply scale-110;
+  }
+} 
