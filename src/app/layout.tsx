@@ -1,24 +1,15 @@
 import { type Metadata } from 'next'
-// import { DM_Sans, Inter } from 'next/font/google'
 import { SmoothScroll } from '@/components/SmoothScroll'
+
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
 
 import '@/styles/tailwind.css'
 
 import clsx from "clsx";
 import {LanguageProvider} from "@/context/LanguageContext";
-
-// const inter = Inter({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-inter',
-// })
-//
-// const dmSans = DM_Sans({
-//   subsets: ['latin'],
-//   weight: ['400', '500', '700'],
-//   display: 'swap',
-//   variable: '--font-dm-sans',
-// })
 
 export const metadata: Metadata = {
   title: {
@@ -91,11 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={clsx(
-        'h-full bg-white antialiased',
-        // inter.variable,
-        // dmSans.variable,
-      )}
+      className="h-full bg-white antialiased"
     >
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -104,7 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#6366F1" />
       </head>
-      <body className="flex min-h-full theme-transition bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
+      <body className="flex min-h-full theme-transition bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 font-sans">
         <LanguageProvider>
           <SmoothScroll />
           <div className="flex w-full flex-col">{children}</div>
