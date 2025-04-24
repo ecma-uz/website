@@ -67,7 +67,7 @@ export const translations = {
         },
         hero: {
           title: "JavaScript Community Representation",
-          subtitle1: "Website of Uzbek Ecma for representation. Connecting JavaScript communities across Uzbekistan to collaborate, share knowledge, and grow together.",
+          subtitle1: "Connecting JavaScript communities across Uzbekistan to collaborate, share knowledge, and grow together.",
           subtitle2: "We represent various JavaScript communities while maintaining their individual identities, helping them coordinate efforts and resources.",
           exploreCta: "Explore Communities",
           stats: {
@@ -125,7 +125,7 @@ export const translations = {
         },
         hero: {
           title: "JavaScript Hamjamiyatlari Vakilligi",
-          subtitle1: "O'zbek Ecma vakilligi uchun sayt. O'zbekistondagi JavaScript hamjamiyatlarini hamkorlik qilish, bilim almashish va birga o'sish uchun bog'lab turadi.",
+          subtitle1: "O'zbekistondagi JavaScript hamjamiyatlarini hamkorlik qilish, bilim almashish va birga o'sish uchun bog'lab turadi.",
           subtitle2: "Turli JavaScript hamjamiyatlarini o'z shaxsiyatlarini saqlab qolgan holda ifoda etamiz, ularning harakatlarini va resurslarini muvofiqlashtirish yordam beramiz.",
           exploreCta: "Hamjamiyatlarni ko'rish",
           stats: {
@@ -183,7 +183,7 @@ export const translations = {
         },
         hero: {
           title: "Представительство JavaScript-сообществ",
-          subtitle1: "Сайт Узбекского представительства Ecma. Объединяет JavaScript-сообщества по всему Узбекистану для сотрудничества, обмена знаниями и совместного роста.",
+          subtitle1: "Объединяет JavaScript-сообщества по всему Узбекистану для сотрудничества, обмена знаниями и совместного роста.",
           subtitle2: "Мы представляем различные JavaScript-сообщества, сохраняя их индивидуальность и помогая координировать усилия и ресурсы.",
           exploreCta: "Изучить сообщества",
           stats: {

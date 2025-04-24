@@ -16,7 +16,7 @@ export function Committee() {
             <Container>
                 <div className="mx-auto max-w-2xl text-center">
                     <FadeIn>
-                        <h2 className="font-display text-4xl font-medium tracking-tighter bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent sm:text-5xl">
+                        <h2 className="font-display text-4xl font-medium tracking-tighter bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent sm:text-5xl text-neutral-700 dark:text-neutral-300">
                             {t.title}
                         </h2>
                         <p className="mt-4 font-display text-2xl tracking-tight text-neutral-700 dark:text-neutral-300">
