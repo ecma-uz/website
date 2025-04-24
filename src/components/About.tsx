@@ -17,7 +17,7 @@ export function About() {
             <Container>
                 <div className="mx-auto max-w-2xl text-center">
                     <FadeIn>
-                        <h2 className="font-display text-4xl font-medium tracking-tighter bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent sm:text-5xl min-h-title flex items-center justify-center text-control-tight">
+                        <h2 className="font-display text-4xl font-medium tracking-tighter bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent sm:text-5xl min-h-title flex items-center justify-center text-neutral-700 dark:text-neutral-300">
                             {t.title}
                         </h2>
                         <p className="mt-4 font-display text-xl sm:text-2xl tracking-tight text-neutral-700 dark:text-neutral-300 min-h-subtitle flex items-center justify-center text-control-normal">
