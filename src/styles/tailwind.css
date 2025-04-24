@@ -32,8 +32,8 @@
   --radius-4xl: 2rem;
   --radius-5xl: 2.5rem;
 
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-dm-sans);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-sans);
 
   --container-2xl: 40rem;
 }
