@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
   :root {
     --color-primary: 0 255 136;
     --color-primary-dark: 0 204 106;
