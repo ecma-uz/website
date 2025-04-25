@@ -36,10 +36,22 @@
 
 @layer components {
   .nestjs-icon {
-    @apply transition-transform duration-300;
+    @apply transition-transform duration-500;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-delay: 0.08s;
   }
   
   .nestjs-icon:hover {
+    @apply scale-110;
+  }
+  
+  .smooth-scale-hover {
+    @apply transition-transform duration-500;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-delay: 0.1s;
+  }
+  
+  .group:hover .smooth-scale-hover {
     @apply scale-110;
   }
 } 
