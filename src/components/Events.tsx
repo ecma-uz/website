@@ -30,7 +30,7 @@ export function Events() {
                         <FadeIn key={event.id} delay={0.1 * index}>
                             <div className="group relative h-full rounded-2xl bg-white dark:bg-neutral-800 p-8 shadow-lg shadow-neutral-200/50 dark:shadow-neutral-900/50 hover:shadow-xl hover:shadow-neutral-200/70 dark:hover:shadow-neutral-900/70 transition-all duration-300">
                                 <div className="absolute -top-4 left-8 h-12 w-12 rounded-full bg-gradient-to-br from-primary to-accent p-0.5">
-                                    <div className="h-full w-full rounded-full bg-white dark:bg-neutral-800 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+                                    <div className="h-full w-full rounded-full bg-white dark:bg-neutral-800 flex items-center justify-center text-primary smooth-scale-hover">
                                         <CalendarIcon className="h-6 w-6" />
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@ export function Events() {
                                         </a>
                                     )}
                                 </div>
-                                <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-primary to-accent group-hover:w-full transition-all duration-300"></div>
+                                <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-primary to-accent group-hover:w-full transition-all duration-500 transition-delay-100"></div>
                             </div>
                         </FadeIn>
                     ))}
