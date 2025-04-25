@@ -1,11 +1,14 @@
 "use client"
 
+import Image from 'next/image'
+
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
 import { useLanguage } from '@/context/LanguageContext'
 import { translations, LanguageCode } from '@/data/translations'
-import { communities, CommunityType } from '@/data/communities'
+import { communities } from '@/data/communities'
 import { FadeIn } from '@/components/FadeIn'
+
 
 export function Communities() {
     const { language } = useLanguage();
@@ -34,9 +37,15 @@ export function Communities() {
                                         NEW
                                     </div>
                                 )}
-                                <div className="relative h-24 w-24 flex items-center justify-center rounded-2xl bg-gradient-to-br from-neutral-50 to-white dark:from-neutral-800 dark:to-neutral-700 shadow-md group-hover:shadow-lg transition-all duration-500">
-                                    <div className="flex items-center justify-center p-4">
-                                        <community.icon className="h-full w-full group-hover:scale-110 transition-transform duration-500" />
+                                <div className="relative h-26 w-26 flex items-center justify-center rounded-2xl bg-gradient-to-br from-neutral-50 to-white dark:from-neutral-800 dark:to-neutral-700 shadow-md group-hover:shadow-lg transition-all duration-500">
+                                    <div className="flex items-center justify-center p-4 overflow-hidden">
+                                        <Image
+                                            alt={community.name[language as LanguageCode]}
+                                            {...community.image}
+                                            className="h-full w-full transition-transform duration-700 ease-in-out group-hover:scale-110"
+                                            style={{ transitionDelay: '0.1s', transitionTimingFunction: 'cubic-bezier(0.25, 0.1, 0.25, 1)' }}
+                                            priority
+                                        />
                                     </div>
                                 </div>
                                 <h3 className="mt-6 text-xl font-semibold text-neutral-900 dark:text-neutral-100 flex items-center">
