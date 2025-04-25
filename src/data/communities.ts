@@ -1,10 +1,13 @@
+import { StaticImageData } from 'next/image';
 import { LanguageCode } from './translations';
 
-import { IconProps, NodeJsIcon, ReactJsIcon, NestJsIcon } from '@/components/Icons';
+import NodeJsImage from '@/images/communities/ecma-node-js.svg';
+import NestJsImage from '@/images/communities/ecma-nest-js.svg';
+import ReactJsImage from '@/images/communities/ecma-react-js.svg';
 
 export type CommunityType = {
     id: string;
-    icon: React.ComponentType<IconProps>;
+    image: { src: StaticImageData };
     verified: boolean;
     isNew: boolean;
     url: string;
@@ -18,7 +21,7 @@ export type CommunityType = {
 export const communities: CommunityType[] = [
     {
         id: 'nodejs_uz',
-        icon: NodeJsIcon,
+        image: { src: NodeJsImage },
         verified: true,
         isNew: false,
         url: 'https://t.me/nodejs_uz',
@@ -38,7 +41,7 @@ export const communities: CommunityType[] = [
     },
     {
         id: 'react_uz',
-        icon: ReactJsIcon,
+        image: { src: ReactJsImage },
         verified: true,
         isNew: false,
         url: 'https://t.me/react_uz',
@@ -58,7 +61,7 @@ export const communities: CommunityType[] = [
     },
     {
         id: 'nestjs_uz',
-        icon: NestJsIcon,
+        image: { src: NestJsImage },
         verified: true,
         isNew: true,
         url: 'https://t.me/nestjs_uz',
