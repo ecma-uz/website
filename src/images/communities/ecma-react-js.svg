@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Ecma React</title>
+    <g id="Ecma-React" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#00FF88" x="0" y="0" width="1000" height="1000"></rect>
+        <g id="React-icon" transform="translate(77, 52.9979)">
+            <circle id="Oval" fill="#000000" fill-rule="nonzero" cx="423.5" cy="446.502061" r="66.5"></circle>
+            <g id="Group" transform="translate(0, 0)" stroke="#000000" stroke-width="32">
+                <ellipse id="Oval" cx="423" cy="447.535474" rx="423" ry="161.624105"></ellipse>
+                <ellipse id="Oval" transform="translate(422.4648, 447.001) rotate(60) translate(-422.4648, -447.001)" cx="422.464799" cy="447.001027" rx="422.907205" ry="161.505288"></ellipse>
+                <ellipse id="Oval" transform="translate(422.4648, 447.0031) rotate(120) translate(-422.4648, -447.0031)" cx="422.464799" cy="447.003096" rx="422.907205" ry="161.505288"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

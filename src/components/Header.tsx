@@ -31,7 +31,8 @@ export function Header() {
       }`}>
         <Container className="flex flex-wrap items-center justify-between py-4 lg:py-6">
           <div className="flex items-center">
-            <Logo className="h-8 w-auto text-neutral-900 dark:text-neutral-100 sm:h-10 lg:h-14 transition-transform duration-300 hover:scale-105" />
+            <Logo className="h-8 w-auto text-neutral-900 dark:text-neutral-100 sm:h-10 lg:h-14 transition-transform duration-500 hover:scale-105" 
+                  style={{ transitionDelay: '0.08s', transitionTimingFunction: 'cubic-bezier(0.25, 0.1, 0.25, 1)' }} />
           </div>
           <div className="hidden lg:flex items-center space-x-8">
             <nav className="flex items-center space-x-8">

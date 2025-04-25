@@ -43,11 +43,12 @@ export function Hero() {
                   [t.stats.founded, hero.stats.founded],
                 ].map(([name, value]) => (
                     <div key={name as string} className="relative group">
-                      <dt className="font-mono text-sm text-accent text-control-nowrap min-h-[1.5rem]">{name}</dt>
+                      <dt className="font-mono text-sm text-primary text-control-nowrap min-h-[1.5rem]">{name}</dt>
                       <dd className="mt-0.5 text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 text-control-nowrap">
                         {value}
                       </dd>
-                      <div className="absolute -bottom-3 left-0 h-1 w-12 bg-gradient-to-r from-primary to-accent group-hover:w-full transition-all duration-300"></div>
+                      <div className="absolute -bottom-3 left-0 h-1 w-12 bg-gradient-to-r from-primary to-accent group-hover:w-full transition-all duration-500" 
+                           style={{ transitionDelay: '0.05s', transitionTimingFunction: 'cubic-bezier(0.25, 0.1, 0.25, 1)' }}></div>
                     </div>
                 ))}
               </dl>
