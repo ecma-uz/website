@@ -2,8 +2,9 @@ import { StaticImageData } from 'next/image';
 import { LanguageCode } from './translations';
 
 import NodeJsImage from '@/images/communities/ecma-node-js.svg';
-import NestJsImage from '@/images/communities/ecma-nest-js.svg';
 import ReactJsImage from '@/images/communities/ecma-react-js.svg';
+import NestJsImage from '@/images/communities/ecma-nest-js.svg';
+import NuxtJsImage from '@/images/communities/ecma-nuxt-js.svg';
 
 export type CommunityType = {
     id: string;
@@ -77,6 +78,26 @@ export const communities: CommunityType[] = [
             en: 'Uzbekistan NestJS Community',
             uz: 'O\'zbekiston NestJS hamjamiyati',
             ru: 'Сообщество NestJS Узбекистана'
+        }
+    },
+    {
+        id: 'nuxtjsuzc',
+        image: { src: NuxtJsImage },
+        verified: true,
+        isNew: true,
+        url: 'https://t.me/nuxtjsuzc',
+        bgGradient: 'from-[#00FF88]/5 via-[#00FF88]/10 to-[#00CC6A]/5',
+        borderColor: 'border-[#00FF88]/30',
+        hoverBorderColor: 'hover:border-[#00FF88]/50',
+        name: {
+            en: 'Nuxt.js Uzbekistan',
+            uz: 'Nuxt.js Uzbekistan',
+            ru: 'Nuxt.js Узбекистан'
+        },
+        description: {
+            en: 'Uzbekistan Nuxt.js Community',
+            uz: 'O\'zbekiston Nuxt.js hamjamiyati',
+            ru: 'Сообщество Nuxt.js Узбекистана'
         }
     }
 ]
