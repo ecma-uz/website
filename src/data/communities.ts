@@ -51,9 +51,9 @@ export const communities: CommunityType[] = [
         borderColor: 'border-[#00FF88]/30',
         hoverBorderColor: 'hover:border-[#00FF88]/50',
         name: {
-            en: 'ReactJS Uzbekistan',
-            uz: 'ReactJS Uzbekistan',
-            ru: 'ReactJS Узбекистан'
+            en: 'React.js Uzbekistan',
+            uz: 'React.js Uzbekistan',
+            ru: 'React.js Узбекистан'
         },
         description: {
             en: 'Uzbekistan ReactJS Community',
@@ -71,9 +71,9 @@ export const communities: CommunityType[] = [
         borderColor: 'border-[#00FF88]/30',
         hoverBorderColor: 'hover:border-[#00FF88]/50',
         name: {
-            en: 'NestJS Uzbekistan',
-            uz: 'NestJS Uzbekistan',
-            ru: 'NestJS Узбекистан'
+            en: 'Nest.js Uzbekistan',
+            uz: 'Nest.js Uzbekistan',
+            ru: 'Nest.js Узбекистан'
         },
         description: {
             en: 'Uzbekistan NestJS Community',
@@ -111,9 +111,9 @@ export const communities: CommunityType[] = [
         borderColor: 'border-[#00FF88]/30',
         hoverBorderColor: 'hover:border-[#00FF88]/50',
         name: {
-            en: 'Nextjs Uzbekistan Community',
-            uz: 'Nextjs O\'zbekiston hamjamiyati',
-            ru: 'Nextjs Узбекистан сообщество'
+            en: 'Next.js Uzbekistan',
+            uz: 'Next.js Uzbekistan',
+            ru: 'Next.js Узбекистан'
         },
         description: {
             en: 'Uzbekistan Nextjs Community',
