@@ -5,6 +5,7 @@ import { LanguageCode } from './translations';
 import rustamMamadaminovImage from "@/images/committee-members/rustam-mamadaminov.jpeg"
 import diyorbekRustamjonovImage from "@/images/committee-members/diyorbek-rustamjonov.jpg"
 import husniddinQurbonboyevImage from "@/images/committee-members/husniddin-qurbonboyev.jpeg"
+import alisherOrtiqovImage from "@/images/committee-members/alisher-ortiqov.jpg"
 
 export type CommitteeRole = {
     title: string;
@@ -97,5 +98,30 @@ export const committeeMembers: CommitteeMember[] = [
         image: { src: husniddinQurbonboyevImage },
         url: 'https://github.com/husniddin96',
         github: 'husniddin96'
+    },
+    {
+        id: 'alisher-ortiqov',
+        name: {
+            en: 'Alisher Ortiqov',
+            uz: 'Alisher Ortiqov',
+            ru: 'Алишер Ортиков'
+        },
+        roles: {
+            en: {
+                title: `'Nest.js Uzbekistan' Community Lead / Organizer`,
+                communities: [],
+            },
+            uz: {
+                title: `'Nest.js Uzbekistan' Yetakchi`,
+                communities: [],
+            },
+            ru: {
+                title: `'Nest.js Узбекиста' Руководитель / Организатор`,
+                communities: [],
+            }
+        },
+        image: { src: alisherOrtiqovImage },
+        url: 'https://github.com/mcpeblocker',
+        github: 'mcpeblocker'
     }
 ]
