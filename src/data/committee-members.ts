@@ -6,7 +6,6 @@ import rustamMamadaminovImage from "@/images/committee-members/rustam-mamadamino
 import diyorbekRustamjonovImage from "@/images/committee-members/diyorbek-rustamjonov.jpg"
 import husniddinQurbonboyevImage from "@/images/committee-members/husniddin-qurbonboyev.jpeg"
 import alisherOrtiqovImage from "@/images/committee-members/alisher-ortiqov.jpg"
-import yusufAbdurakhimovImage from "@/images/committee-members/yusuf-abdurakhimov.jpg"
 
 export type CommitteeRole = {
     title: string;
@@ -124,30 +123,5 @@ export const committeeMembers: CommitteeMember[] = [
         image: { src: alisherOrtiqovImage },
         url: 'https://github.com/mcpeblocker',
         github: 'mcpeblocker'
-    },
-    {
-        id: 'yusuf-abdurakhimov',
-        name: {
-            en: 'Yusuf Abdurakhimov',
-            uz: 'Yusuf Abdurakhimov',
-            ru: 'Юсуф Абдурахимов'
-        },
-        roles: {
-            en: {
-                title: `'Next.js Uzbekistan' Community Lead / Organizer`,
-                communities: [],
-            },
-            uz: {
-                title: `'Next.js Uzbekistan' Yetakchi`,
-                communities: [],
-            },
-            ru: {
-                title: `'Next.js Узбекиста' Руководитель / Организатор`,
-                communities: [],
-            }
-        },
-        image: { src: yusufAbdurakhimovImage },
-        url: 'https://github.com/uwussimo',
-        github: 'uwussimo'
     }
 ]
