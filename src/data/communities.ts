@@ -5,7 +5,6 @@ import NodeJsImage from '@/images/communities/ecma-node-js.svg';
 import ReactJsImage from '@/images/communities/ecma-react-js.svg';
 import NestJsImage from '@/images/communities/ecma-nest-js.svg';
 import NuxtJsImage from '@/images/communities/ecma-nuxt-js.svg';
-import NextJsImage from '@/images/communities/ecma-next-js.svg';
 
 export type CommunityType = {
     id: string;
@@ -99,26 +98,6 @@ export const communities: CommunityType[] = [
             en: 'Uzbekistan Nuxt.js Community',
             uz: 'O\'zbekiston Nuxt.js hamjamiyati',
             ru: 'Сообщество Nuxt.js Узбекистана'
-        }
-    },
-    {
-        id: 'nextjs_uzbekistan',
-        image: { src: NextJsImage },
-        verified: true,
-        isNew: true,
-        url: 'https://t.me/nextjs_uzbekistan',
-        bgGradient: 'from-[#00FF88]/5 via-[#00FF88]/10 to-[#00CC6A]/5',
-        borderColor: 'border-[#00FF88]/30',
-        hoverBorderColor: 'hover:border-[#00FF88]/50',
-        name: {
-            en: 'Nextjs Uzbekistan Community',
-            uz: 'Nextjs O\'zbekiston hamjamiyati',
-            ru: 'Nextjs Узбекистан сообщество'
-        },
-        description: {
-            en: 'Uzbekistan Nextjs Community',
-            uz: 'O\'zbekiston Nextjs hamjamiyati',
-            ru: 'Сообщество Nextjs Узбекистана'
         }
     }
 ]
