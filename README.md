@@ -66,4 +66,3 @@ This project is licensed under the Tailwind Plus License and MIT - see the [LICE
 <p align="center">
     <img src=".github/assets/footer.png" alt="Ecma Uzbekistan's {Website}">
 </p>
-```
