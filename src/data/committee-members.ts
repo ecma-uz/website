@@ -128,21 +128,21 @@ export const committeeMembers: CommitteeMember[] = [
     {
         id: 'yusuf-abdurakhimov',
         name: {
-            en: 'Yusuf Abdurakhimov',
-            uz: 'Yusuf Abdurakhimov',
-            ru: 'Юсуф Абдурахимов'
+            en: 'Mukhammadyusuf Abdurakhimov',
+            uz: 'Mukhammadyusuf Abdurakhimov',
+            ru: 'Muхаммадусуф Абдурахимов'
         },
         roles: {
             en: {
-                title: `'Next.js Uzbekistan' Community Lead / Organizer`,
+                title: `'O'zbek ECMA' Rais / Yetakchi`,
                 communities: [],
             },
             uz: {
-                title: `'Next.js Uzbekistan' Yetakchi`,
+                title: `'O'zbek ECMA' Rais / Yetakchi`,
                 communities: [],
             },
             ru: {
-                title: `'Next.js Узбекиста' Руководитель / Организатор`,
+                title: `'Узбек ECMA' Руководитель / Организатор`,
                 communities: [],
             }
         },
