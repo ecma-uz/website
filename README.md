@@ -8,7 +8,6 @@
 
 <p align="center">
     <img align="center" src="https://img.shields.io/github/languages/top/ecma-uz/website?style=flat&logo=javascript&logoColor=ffffff&labelColor=00AC5B&color=00AC5B" alt="Top Used Language">
-    <a href="https://t.me/xinux"><img align="center" src="https://img.shields.io/badge/Chat-grey?style=flat&logo=telegram&logoColor=ffffff&labelColor=00AC5B&color=00AC5B" alt="Telegram Community"></a>
 </p>
 
 ## About
