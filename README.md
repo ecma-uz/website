@@ -30,7 +30,7 @@ zed .
 npm run dev
 ```
 
-### Building
+## Building
 
 This project aims to remain SSG and deployed in GitHub Pages. GitHub Pages gets `nix build` output, but you can build it inside development environment using `npm` package manager.
 
