@@ -42,10 +42,6 @@ nix build .
 npm run build
 ```
 
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind Plus license](https://tailwindcss.com/plus/license).
-
 ## Learn more
 
 To learn more about the technologies used in this site project, see the following resources:
