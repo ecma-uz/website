@@ -11,7 +11,7 @@ export function LanguageSwitcher() {
                 onClick={() => setLanguage('en')}
                 className={`rounded-lg px-3 py-1 text-sm font-medium transition-colors ${
                     language === 'en'
-                        ? 'bg-primary text-white'
+                        ? 'bg-primary text-black'
                         : 'text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800'
                 }`}
             >
@@ -21,7 +21,7 @@ export function LanguageSwitcher() {
                 onClick={() => setLanguage('ru')}
                 className={`rounded-lg px-3 py-1 text-sm font-medium transition-colors ${
                     language === 'ru'
-                        ? 'bg-primary text-white'
+                        ? 'bg-primary text-black'
                         : 'text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800'
                 }`}
             >
@@ -31,7 +31,7 @@ export function LanguageSwitcher() {
                 onClick={() => setLanguage('uz')}
                 className={`rounded-lg px-3 py-1 text-sm font-medium transition-colors ${
                     language === 'uz'
-                        ? 'bg-primary text-white'
+                        ? 'bg-primary text-black'
                         : 'text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800'
                 }`}
             >
