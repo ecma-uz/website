@@ -35,15 +35,15 @@ export function Committee() {
                                             <Image
                                                 alt={member.name[currentLanguage]}
                                                 {...member.image}
-                                                className="h-full w-full object-cover transition-transform duration-700 ease-in-out motion-safe:group-hover:scale-110"
+                                                className="h-full w-full object-cover !transition-transform duration-700 ease-in-out motion-safe:group-hover:scale-110"
                                                 style={{ transitionDelay: '0.1s', transitionTimingFunction: 'cubic-bezier(0.25, 0.1, 0.25, 1)' }}
                                                 priority
                                             />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-80" 
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90 !transition-opacity duration-500 group-hover:opacity-80" 
                                                  style={{ transitionDelay: '0.05s' }}/>
                                         </div>
-                                        <div className="absolute inset-0 flex flex-col justify-end p-6 transition-transform duration-300 ease-in-out">
-                                            <div className="transform transition-all duration-300 ease-in-out group-hover:translate-y-[-8px]">
+                                        <div className="absolute inset-0 flex flex-col justify-end p-6 !transition-transform duration-300 ease-in-out">
+                                            <div className="transform !transition-all duration-300 ease-in-out group-hover:translate-y-[-8px]">
                                                 <h3 className="font-display text-2xl font-bold tracking-wide text-white">
                                                     {member.name[currentLanguage]}
                                                 </h3>
