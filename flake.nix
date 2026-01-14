@@ -27,7 +27,7 @@
         formatter = pkgs.alejandra;
 
         # Development environment
-        devShells.default = import ./shell.nix {inherit pkgs;};
+        devShells.default = import ./shell.nix self {inherit pkgs;};
 
         # Output package
         packages.default = pkgs.callPackage ./default.nix {inherit pkgs;};

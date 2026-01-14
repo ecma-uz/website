@@ -1,25 +1,14 @@
-{
-  pkgs ? let
-    lock = (builtins.fromJSON (builtins.readFile ./flake.lock)).nodes.nixpkgs.locked;
-    nixpkgs = fetchTarball {
-      url = "https://github.com/nixos/nixpkgs/archive/${lock.rev}.tar.gz";
-      sha256 = lock.narHash;
-    };
-  in
-    import nixpkgs {overlays = [];},
-  ...
-}: let
-  manifest = pkgs.lib.importJSON ./package.json;
-in
-  pkgs.stdenv.mkDerivation {
-    name = manifest.name;
+flake: {pkgs, ...}: let
+  # Hostplatform system
+  system = pkgs.hostPlatform.system;
 
-    nativeBuildInputs = with pkgs; [
-      # Typescript
-      deno
-      nodejs
-      pnpm
-      corepack
+  # Production package
+  base = flake.packages.${system}.default;
+in
+  pkgs.mkShell {
+    inputsFrom = [base];
+
+    packages = with pkgs; [
       eslint
       nodePackages.typescript
       nodePackages.typescript-language-server
@@ -32,10 +21,5 @@ in
 
       # Tailwind
       tailwindcss
-    ];
-
-    buildInputs = with pkgs; [
-      openssl
-      vips
     ];
   }
