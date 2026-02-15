@@ -17,7 +17,7 @@ in
     version = manifest.version;
 
     src = ./.;
-    npmDepsHash = "sha256-zeJPKNRRx8zJ4M+ifppcJnRSwjp15u31AGXVhZZlkFM=";
+    npmDepsHash = "sha256-fbzOsLoqKVa8wFxn3zj4r5nVPABKME5L4Chb2CNAVlk=";
 
     installPhase = ''
       # Create output directory
